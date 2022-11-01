@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background: #000000;
+}
+#app {
+    max-width: 112rem;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 11.6rem;
+    
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 11.5rem;
+    margin-bottom: 8.7rem;
+}
+.input-wrapper {
+    display: flex;
+    gap: .8rem;
+    margin-top: -2rem;
+}
+header input {
+    padding: 1.6rem;
+    width: 46.2rem;
+    background: #06181C;
+    border-radius: .5rem;
+    border: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+}
+header input::placeholder {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #7C7C8A;
+}
+header button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #065E7C;
+    padding: 1.2rem 3.2rem;
+    border-radius: .5rem;
+    border: none;
+    gap: .8rem;
+    cursor: pointer;
+}
+header button:hover {
+    background: #FFFFFF;
+    color: #065E7C;
+}
+.table-wrapper {
+    max-height: 50rem;
+    overflow-y: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.thead {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: #E1E1E6;
+    background: #092D38;
+    text-align: left;
+    border-radius: 1.2rem 1.2rem 0 0;
+    margin-top: 8.7rem;
+    display: flex;
+}
+.thead div {
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+.thead div:nth-child(1) {
+    width: 51rem;
+}
+.thead div:nth-child(2) {
+    width: 16.5rem;
+}
+.thead div:nth-child(3) {
+    width: 17.5rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #4A808C;
+}
+tbody tr:last-child {
+    border: none;
+}
+tbody tr:nth-child(odd) {
+    background: rgba(6, 22, 27, 0.5);
+}
+tbody tr:nth-child(even) {
+    background: #06181C;
+}
+tbody tr:last-child td:nth-child(1) {
+    border-radius: 0 0 0 1.2rem;
+}
+tbody tr:last-child td:nth-child(4) {
+    border-radius: 0 0 1.2rem 0;
+}
+tbody td {
+    padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+tbody img {
+    width: 5.6rem;
+    height: 5.6rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+tbody p, .repositories, .followers {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: #E1E1E6;
+}
+tbody span {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: #E1E1E6;
+}
+.noFav {
+    background: #06181C;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+}
+.noFav img {
+    width: 13.2rem;
+    height: 12.5rem;
+}
+.noFav h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 2.5rem;
+    color: #4E5455;
+}
+.hide {
+    display: none;
+}
+
+/* no favorites screen */
+
+
+/* no favorites screen */
+
+.github-user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.remove button {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    color: #F75A68;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Barra de rolagem */
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+    background-color: #232C3B;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: #232C3B;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 15px;
+}
