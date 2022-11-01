@@ -76,14 +76,22 @@ header button {
     border: none;
     gap: .8rem;
     cursor: pointer;
+    transition: all .1s;
 }
 header button:hover {
     background: #FFFFFF;
     color: #065E7C;
 }
+.big-table-wrapper {
+    border: 1px solid #4A808C;
+    border-radius: 1.2rem;
+
+}
 .table-wrapper {
-    max-height: 50rem;
+    max-height: 51rem;
     overflow-y: auto;
+    border: 1px solid #4A808C;
+    border-radius: 0 0 1.2rem 1.2rem;
 }
 table {
     width: 100%;
@@ -99,6 +107,7 @@ table {
     border-radius: 1.2rem 1.2rem 0 0;
     margin-top: 8.7rem;
     display: flex;
+    border: 1px solid #4A808C;
 }
 .thead div {
     padding: 1.6rem 2.4rem 1.6rem 4rem;

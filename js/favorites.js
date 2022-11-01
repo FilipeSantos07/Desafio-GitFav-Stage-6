@@ -44,7 +44,7 @@ export class Favorites {
             if(user.login === undefined) {
                 throw new Error("Usuário não encontrado!")
             }
-
+            
             this.entries = [user, ...this.entries]
             this.update()
             this.save()
@@ -90,6 +90,8 @@ export class FavoritesView extends Favorites {
 
     update() {
       this.removeAllTr()
+      const input = this.root.querySelector("header input")
+      input.focus()
 
       this.entries.forEach((user) => {
         const row = this.createRow()
