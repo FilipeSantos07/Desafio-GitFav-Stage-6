@@ -6,7 +6,7 @@
 
 One more challenge successfully finished! 
 
-Último desafio do Stage 6 - trilha Explorer da Rocketseat concluído com sucesso! Esse é o GitFav, nele você poderá favoritar usuários do Github e removê-los da lista. Nele a gente usou a API do Github para buscar as informações dos usuários. Nesse desafio foi abordado:
+Último desafio do Stage 6 - trilha Explorer da Rocketseat concluído com sucesso! Esse é o GitFav, nele você poderá favoritar usuários do Github e removê-los da lista. Nele eu usei a API do Github para buscar as informações dos usuários. Nesse desafio foi abordado:
 
 - Consumindo API do Github
 - Aprendendo a criar uma classe Screen reader only
