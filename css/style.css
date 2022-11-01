@@ -110,9 +110,8 @@ table {
     width: 16.5rem;
 }
 .thead div:nth-child(3) {
-    width: 17.5rem;
+    width: 20.5rem;
 }
-
 tbody tr {
     border-bottom: 1px solid #4A808C;
 }
@@ -212,4 +211,26 @@ tbody span {
 ::-webkit-scrollbar-thumb {
     background: #4A808C;
     border-radius: 15px;
+}
+
+@media (min-width:677px) and (max-width:929px) {
+    header {
+        flex-direction: column;
+    }
+    .input-wrapper {
+        margin-top: 5rem;
+    }
+}
+@media (max-width:676px) {
+    header {
+        flex-direction: column;
+    }
+    .input-wrapper {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .thead div {
+        padding: 1.6rem 0.4rem 1.6rem 2rem;
+    }
+    
 }
