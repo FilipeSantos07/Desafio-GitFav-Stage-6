@@ -36,13 +36,13 @@ export class Favorites {
             })
 
             if(userExists) {
-                throw new Error("Usuário já cadastrado!")
+                throw new Error("This user's already been registered!")
             }
 
             const user = await GithubUser.search(username)
 
             if(user.login === undefined) {
-                throw new Error("Usuário não encontrado!")
+                throw new Error("User not found!")
             }
             
             this.entries = [user, ...this.entries]
@@ -105,7 +105,7 @@ export class FavoritesView extends Favorites {
         row.querySelector(".followers").textContent = user.followers
 
         row.querySelector(".remove button").addEventListener(`click`, () => {
-            const isOk = confirm(`Tem certeza que deseja deletar essa linha?`)
+            const isOk = confirm(`Are you sure you want to delete this user?`)
 
             if(isOk == true) {
                 this.delete(user)
